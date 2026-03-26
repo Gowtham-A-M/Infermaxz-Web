@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Infermaxz Systems — Python for AI &amp; ML, AI for students (grades 5–12), and professional AI coaching."
+    />
+    <title>Infermaxz Systems — AI for Students &amp; Python for AI/ML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Infermaxz Systems home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Infermaxz<span class="logo-accent">Systems</span></span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#why">Why Infermaxz</a></li>
+            <li><a href="#testimonials">Stories</a></li>
+            <li><a href="#contact" class="nav-cta">Get started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Now enrolling · Python for AI &amp; ML</p>
+            <h1>Build real AI capability in your team—not just buzzwords.</h1>
+            <p class="lead">
+              Hands-on programs for professionals and school-age learners—
+              <strong>Python for AI &amp; ML</strong> for builders, and
+              <strong>AI for students</strong> (grades 5–12, no coding required)—plus coaching on
+              LLMs, agents, and responsible AI.
+            </p>
+            <div class="hero-actions">
+              <a href="#brochure" class="btn btn-primary">Python brochure</a>
+              <a href="#ai-for-students" class="btn btn-ghost">AI for students</a>
+            </div>
+            <ul class="hero-trust" aria-label="Highlights">
+              <li>Python for AI &amp; ML · live labs</li>
+              <li>Student bootcamp · gen-AI tools</li>
+              <li>Safe, age-appropriate mentoring</li>
+            </ul>
+          </div>
+          <div
+            class="hero-carousel-shell"
+            id="hero-carousel"
+            aria-roledescription="carousel"
+            aria-label="Featured programs"
+          >
+            <div class="hero-carousel-viewport">
+              <div class="hero-carousel-progress" aria-hidden="true">
+                <div class="hero-carousel-progress-bar" id="hero-carousel-progress-bar"></div>
+              </div>
+              <div class="hero-carousel-track" id="hero-carousel-track">
+                <article
+                  class="hero-slide"
+                  id="hero-slide-0"
+                  aria-labelledby="hero-banner-title-0"
+                  data-hero-slide="0"
+                >
+                  <a
+                    href="#ai-for-students"
+                    class="hero-slide-visual hero-slide-visual--interactive"
+                    data-hero-tilt="1"
+                  >
+                    <span class="hero-slide-shine" aria-hidden="true"></span>
+                    <img
+                      class="hero-slide-img"
+                      src="images/hero-summer-camp-sample.png"
+                      width="1200"
+                      height="654"
+                      alt="Students collaborating on laptops, robotics, and AI concepts in a summer camp setting"
+                      decoding="async"
+                      fetchpriority="high"
+                    />
+                  </a>
+                  <div class="hero-slide-banner">
+                    <span class="hero-slide-eyebrow">Youth · live online</span>
+                    <p class="hero-slide-title" id="hero-banner-title-0">AI Summer Camp For Students</p>
+                    <p class="hero-slide-desc">Grades 5–12 · gen-AI tools · guided projects</p>
+                    <a class="hero-slide-cta" href="#ai-for-students">View program</a>
+                  </div>
+                </article>
+                <article
+                  class="hero-slide"
+                  id="hero-slide-1"
+                  aria-labelledby="hero-banner-title-1"
+                  data-hero-slide="1"
+                >
+                  <a
+                    href="#brochure"
+                    class="hero-slide-visual hero-slide-visual--interactive"
+                    data-hero-tilt="1"
+                  >
+                    <span class="hero-slide-shine" aria-hidden="true"></span>
+                    <img
+                      class="hero-slide-img"
+                      src="images/hero-python-ai.svg"
+                      width="640"
+                      height="336"
+                      alt="Illustration: Python code, neural nodes, and ML pipeline"
+                      decoding="async"
+                    />
+                  </a>
+                  <div class="hero-slide-banner hero-slide-banner--python">
+                    <span class="hero-slide-eyebrow">Professional track</span>
+                    <p class="hero-slide-title" id="hero-banner-title-1">Python for AI and ML</p>
+                    <p class="hero-slide-desc">Foundations to deep learning · portfolio capstone</p>
+                    <a class="hero-slide-cta" href="#brochure">Get brochure</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="hero-carousel-controls" role="group" aria-label="Featured program slides">
+              <button
+                type="button"
+                class="hero-carousel-dot is-active"
+                aria-pressed="true"
+                aria-label="Show slide: AI Summer Camp For Students"
+                id="hero-dot-0"
+                data-hero-go="0"
+              ></button>
+              <button
+                type="button"
+                class="hero-carousel-dot"
+                aria-pressed="false"
+                aria-label="Show slide: Python for AI and ML"
+                id="hero-dot-1"
+                data-hero-go="1"
+              ></button>
+            </div>
+            <p class="visually-hidden" id="hero-carousel-live" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="Focus areas">
+        <div class="container strip-inner">
+          <span>Python for AI &amp; ML</span>
+          <span class="strip-dot" aria-hidden="true"></span>
+          <span>AI for students (5–12)</span>
+          <span class="strip-dot" aria-hidden="true"></span>
+          <span>Gen-AI tools · no-code</span>
+          <span class="strip-dot" aria-hidden="true"></span>
+          <span>LLMs &amp; responsible use</span>
+        </div>
+      </section>
+
+      <section class="section" id="programs">
+        <div class="container">
+          <header class="section-head">
+            <h2>Programs that match how you work</h2>
+            <p>
+              Our <strong>Python for AI &amp; ML</strong> track and
+              <strong>AI for students</strong> program sit alongside leadership intensives and custom
+              sprints—built for measurable outcomes at every age.
+            </p>
+          </header>
+          <article class="course-feature" id="programs-python-teaser">
+            <div class="course-feature-body">
+              <span class="badge badge-inline">Flagship course</span>
+              <h3>Python for AI &amp; ML</h3>
+              <p>
+                A structured path from Python essentials through classical ML, deep learning, and
+                applied AI—so you can build real models, not just run notebooks. See the
+                <a href="#python-course">learning roadmap</a> and
+                <a href="#brochure">download the official brochure</a> after a quick registration.
+              </p>
+              <div class="course-feature-actions">
+                <a href="#python-course" class="btn btn-ghost">View roadmap</a>
+                <a href="#brochure" class="btn btn-primary">Get brochure</a>
+              </div>
+            </div>
+          </article>
+          <article class="course-feature course-feature-students" id="programs-students-teaser">
+            <div class="course-feature-body">
+              <span class="badge badge-inline badge-students">Youth program</span>
+              <h3>AI for students</h3>
+              <p>
+                A structured, live AI program aligned with how students already learn—generative AI
+                tools, guided projects, and responsible use. Designed for
+                <strong>grades 5–12</strong>; <strong>no prior coding</strong> required. Structure
+                and outcomes are in the spirit of leading student bootcamps such as
+                <a
+                  href="https://economictimes.indiatimes.com/masterclass/ai-for-students"
+                  rel="noopener noreferrer"
+                  >ET Masterclass’s AI for Students</a
+                >—delivered as an Infermaxz program with our mentors and materials.
+              </p>
+              <ul class="program-highlights">
+                <li>Hands-on exposure to many real-world AI tools (writing, image, video, audio, no-code)</li>
+                <li>Expert-led live weekend-style sessions with projects you can showcase</li>
+                <li>Optional extended learning window with refreshers and mentor check-ins</li>
+              </ul>
+              <div class="course-feature-actions">
+                <a href="#ai-for-students" class="btn btn-primary">Full program details</a>
+                <a href="#contact" class="btn btn-ghost">School / group enquiry</a>
+              </div>
+            </div>
+          </article>
+          <div class="cards cards-3">
+            <article class="card">
+              <h3>AI fluency for leaders</h3>
+              <p>
+                Executive intensives on opportunity mapping, vendor landscape, risk, and how to
+                fund AI initiatives that compound.
+              </p>
+              <ul class="card-list">
+                <li>2-day workshop + async prep</li>
+                <li>Board-ready framing</li>
+              </ul>
+            </article>
+            <article class="card card-featured">
+              <span class="badge">Most popular</span>
+              <h3>Engineering bootcamps</h3>
+              <p>
+                From prompting to production: APIs, retrieval, agents, testing, and shipping features
+                your users can trust.
+              </p>
+              <ul class="card-list">
+                <li>Weekly builds + reviews</li>
+                <li>Private Slack / forum</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Custom enterprise sprints</h3>
+              <p>
+                We embed with your team to design an AI roadmap, prototype the highest-leverage
+                workflow, and hand off playbooks.
+              </p>
+              <ul class="card-list">
+                <li>4–8 week engagements</li>
+                <li>On-site or remote</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="python-course">
+        <div class="container">
+          <header class="section-head">
+            <h2>Python for AI &amp; ML — learning roadmap</h2>
+            <p>
+              High-level journey aligned with our official course brochure. Your facilitator may
+              fine-tune pacing and depth per cohort.
+            </p>
+          </header>
+          <ol class="roadmap" aria-label="Course modules in order">
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">1</span>
+              <div class="roadmap-content">
+                <h3>Python foundations for AI</h3>
+                <p>
+                  Syntax, data structures, functions, OOP, virtual environments, and Git—so you can
+                  work confidently in real codebases.
+                </p>
+              </div>
+            </li>
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">2</span>
+              <div class="roadmap-content">
+                <h3>Data stack &amp; wrangling</h3>
+                <p>
+                  NumPy and Pandas for numerical computing, cleaning, joins, and feature prep—the
+                  daily toolkit for ML datasets.
+                </p>
+              </div>
+            </li>
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">3</span>
+              <div class="roadmap-content">
+                <h3>Visualization &amp; EDA</h3>
+                <p>
+                  Matplotlib and Seaborn for exploratory analysis, communicating insights, and
+                  validating assumptions before you model.
+                </p>
+              </div>
+            </li>
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">4</span>
+              <div class="roadmap-content">
+                <h3>Classical machine learning</h3>
+                <p>
+                  scikit-learn: train/test splits, metrics, pipelines, regression, classification,
+                  clustering, and model selection.
+                </p>
+              </div>
+            </li>
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">5</span>
+              <div class="roadmap-content">
+                <h3>Deep learning core</h3>
+                <p>
+                  Neural network concepts, training loops, and frameworks—TensorFlow / Keras and
+                  PyTorch foundations for tabular, image, and sequence models.
+                </p>
+              </div>
+            </li>
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">6</span>
+              <div class="roadmap-content">
+                <h3>Applied AI workflows</h3>
+                <p>
+                  Practical NLP and computer vision patterns, plus how pretrained models and modern
+                  tooling accelerate delivery.
+                </p>
+              </div>
+            </li>
+            <li class="roadmap-step">
+              <span class="roadmap-marker" aria-hidden="true">7</span>
+              <div class="roadmap-content">
+                <h3>Capstone &amp; next steps</h3>
+                <p>
+                  End-to-end project, model packaging, simple deployment or API exposure, and
+                  portfolio prep—mirroring the brochure’s outcomes section.
+                </p>
+              </div>
+            </li>
+          </ol>
+          <p class="roadmap-foot">
+            Full syllabus, duration, fees, and batch details are in the PDF brochure—
+            <a href="#brochure">register below to download it</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="ai-for-students">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow section-eyebrow">Grades 5–12 · Live online</p>
+            <h2>AI for students</h2>
+            <p class="student-tagline">
+              <strong>Four weeks to learn.</strong> <strong>Twelve months to grow.</strong>
+            </p>
+            <p>
+              Build creative and academic confidence with generative AI—prompting, media tools, and
+              no-code builds—under mentor supervision and with a strong focus on
+              <strong>safety and ethics</strong>.
+            </p>
+          </header>
+
+          <ul class="student-pills" aria-label="Program highlights">
+            <li>Explore 20+ generative AI tools across categories</li>
+            <li>Live expert-led sessions (weekend-friendly scheduling)</li>
+            <li>Multiple guided projects across the intensive month</li>
+            <li>Beginner-friendly: designed for non-coders</li>
+          </ul>
+
+          <h3 class="student-subhead">Four-week learning plan</h3>
+          <div class="phase-grid" role="list">
+            <article class="phase-card" role="listitem">
+              <span class="phase-label">Foundation</span>
+              <h4>AI, LLMs &amp; prompting</h4>
+              <p>
+                What large language models are, how to write strong prompts, and using AI as a study
+                companion responsibly.
+              </p>
+            </article>
+            <article class="phase-card" role="listitem">
+              <span class="phase-label">Intermediate</span>
+              <h4>Create with AI</h4>
+              <p>
+                Posters, documents, short videos, and avatars—turning ideas into shareable creative
+                work.
+              </p>
+            </article>
+            <article class="phase-card" role="listitem">
+              <span class="phase-label">Advanced</span>
+              <h4>No-code apps &amp; games</h4>
+              <p>
+                Simple websites, interactive quizzes, and mini-games using guided no-code and AI
+                builders.
+              </p>
+            </article>
+            <article class="phase-card" role="listitem">
+              <span class="phase-label">Graduation</span>
+              <h4>Capstone &amp; showcase</h4>
+              <p>
+                A portfolio piece plus optional friendly competition or demo day—celebrating what
+                each student shipped.
+              </p>
+            </article>
+          </div>
+
+          <h3 class="student-subhead">Twelve months of continued growth</h3>
+          <p class="student-lead">
+            After the intensive month, stay supported with a lightweight year-long layer (exact
+            cadence confirmed per batch).
+          </p>
+          <div class="cards cards-3 student-benefits">
+            <article class="card card-soft">
+              <h4>Monthly AI refreshers</h4>
+              <p>
+                Periodic live touchpoints on new tools and themes so skills do not go stale as the
+                field moves fast.
+              </p>
+            </article>
+            <article class="card card-soft">
+              <h4>Future batch access</h4>
+              <p>
+                Eligible learners can revisit select live sessions in a later cohort to reinforce
+                concepts—details shared at enrollment.
+              </p>
+            </article>
+            <article class="card card-soft">
+              <h4>Mentor support line</h4>
+              <p>
+                Email-based access for project help and tool questions during the support window—so
+                students are not stuck alone between sessions.
+              </p>
+            </article>
+          </div>
+
+          <h3 class="student-subhead">Program overview</h3>
+          <ul class="overview-checklist">
+            <li>Kicks off with a concentrated live bootcamp-style block over several weekends</li>
+            <li>Flexible time slots where offered (e.g. mid-morning and early evening) to fit school routines</li>
+            <li>Recordings for revision when a live session is missed</li>
+            <li>Certificate of completion from Infermaxz Systems</li>
+            <li>Showcase opportunities for standout projects (format varies by cohort)</li>
+            <li>Group and school bookings welcome—contact us for custom batches</li>
+          </ul>
+
+          <h3 class="student-subhead">Why early AI literacy matters</h3>
+          <div class="insight-grid">
+            <p class="insight-card">
+              Workforce surveys worldwide point to <strong>rising demand for AI-aware skills</strong>
+              across roles—not only for engineers.
+            </p>
+            <p class="insight-card">
+              Students in many countries are experimenting with AI tools in early secondary years;
+              <strong>structured guidance</strong> helps build good habits early.
+            </p>
+            <p class="insight-card">
+              India’s learners often encounter AI in ad hoc ways; a
+              <strong>sequenced program</strong> closes the gap versus ad-hoc trial and error.
+            </p>
+            <p class="insight-card">
+              Guided practice tends to improve <strong>confidence and digital fluency</strong>—useful
+              for exams, projects, and creative work alike.
+            </p>
+          </div>
+
+          <h3 class="student-subhead">What students learn to build and do</h3>
+          <div class="skill-grid">
+            <article class="skill-item">
+              <h4>Your own study assistant</h4>
+              <p>
+                Configure a small AI helper for quizzes, explanations, and revision—always with
+                mentor oversight.
+              </p>
+            </article>
+            <article class="skill-item">
+              <h4>Smarter exam &amp; viva prep</h4>
+              <p>
+                Summaries, flashcards, and practice answers using AI as a coach, not a shortcut.
+              </p>
+            </article>
+            <article class="skill-item">
+              <h4>Speaking &amp; presentations</h4>
+              <p>
+                Practice talks and storytelling with feedback loops that build clarity and confidence.
+              </p>
+            </article>
+            <article class="skill-item">
+              <h4>No-code sites &amp; games</h4>
+              <p>
+                Publish simple pages and playful experiences without writing traditional code.
+              </p>
+            </article>
+            <article class="skill-item">
+              <h4>Art &amp; design from ideas</h4>
+              <p>
+                Characters, posters, and visuals from text prompts—plus discussion of originality and
+                ethics.
+              </p>
+            </article>
+            <article class="skill-item">
+              <h4>Images, video &amp; sound</h4>
+              <p>
+                Short clips, backgrounds, and audio experiments using the same categories of tools
+                creators use—safely and age-appropriately.
+              </p>
+            </article>
+          </div>
+
+          <h3 class="student-subhead">Tool categories (examples)</h3>
+          <p class="tools-intro">
+            We rotate across representative tools in each bucket; exact products may change as the
+            ecosystem evolves.
+          </p>
+          <ul class="tools-columns">
+            <li><strong>Writing &amp; research</strong> — brainstorming, drafting, and structuring school work</li>
+            <li><strong>Image generation</strong> — art, posters, storyboards</li>
+            <li><strong>Music &amp; audio</strong> — simple compositions and voice experiments</li>
+            <li><strong>Video &amp; avatars</strong> — clips and presenter-style content</li>
+            <li><strong>Slides &amp; visual stories</strong> — decks and narrative flow</li>
+            <li><strong>No-code &amp; agents</strong> — light websites, apps, and guided automations</li>
+          </ul>
+
+          <h3 class="student-subhead">FAQ</h3>
+          <div class="student-faq">
+            <details>
+              <summary>Who is this program for?</summary>
+              <p>
+                Learners from about <strong>grades 5 through 12</strong>. Cohorts may be grouped by
+                age band so activities stay appropriate.
+              </p>
+            </details>
+            <details>
+              <summary>Do students need coding experience?</summary>
+              <p>
+                <strong>No.</strong> The emphasis is on no-code and tool-based creation, with clear
+                guardrails and mentor support.
+              </p>
+            </details>
+            <details>
+              <summary>Is it safe for children to use AI tools?</summary>
+              <p>
+                We stress <strong>responsible use</strong>, supervised sessions, age-appropriate
+                prompts, and privacy hygiene. Parents receive a short orientation on what to expect.
+              </p>
+            </details>
+            <details>
+              <summary>What if my child misses a live session?</summary>
+              <p>
+                Recordings are provided for revision where available, and mentors summarize key
+                takeaways for the cohort.
+              </p>
+            </details>
+            <details>
+              <summary>Will there be a certificate?</summary>
+              <p>
+                Yes—students who complete the program requirements receive an
+                <strong>Infermaxz Systems</strong> certificate suitable for portfolios.
+              </p>
+            </details>
+          </div>
+
+          <div class="student-cta">
+            <a href="#contact" class="btn btn-primary">Reserve a seat / ask a question</a>
+            <p class="student-cta-note">School or parent groups: mention “AI for students” in your message.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="brochure">
+        <div class="container brochure-wrap">
+          <div class="brochure-copy">
+            <h2>Download the course brochure</h2>
+            <p>
+              Register once with your details. You will unlock the official
+              <strong>Python for AI &amp; ML</strong> brochure (PDF) and can download it again on
+              future visits from this device.
+            </p>
+            <p class="brochure-note">
+              The PDF includes the full syllabus, batch options, fees, and contact details.
+            </p>
+          </div>
+          <div class="brochure-panel">
+            <div id="brochure-register" class="brochure-register">
+              <form id="brochure-form" class="brochure-form" novalidate>
+                <label class="full">
+                  <span>Full name</span>
+                  <input
+                    type="text"
+                    name="brochure-name"
+                    id="brochure-name"
+                    required
+                    autocomplete="name"
+                    placeholder="Your name"
+                  />
+                </label>
+                <label class="full">
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    name="brochure-email"
+                    id="brochure-email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                  />
+                </label>
+                <label class="full">
+                  <span>Phone <span class="optional">(optional)</span></span>
+                  <input
+                    type="tel"
+                    name="brochure-phone"
+                    id="brochure-phone"
+                    autocomplete="tel"
+                    placeholder="+91 …"
+                  />
+                </label>
+                <label class="checkbox full">
+                  <input type="checkbox" name="brochure-consent" id="brochure-consent" required />
+                  <span
+                    >I agree to be contacted about this course and related Infermaxz programs, and I
+                    understand I can opt out anytime.</span
+                  >
+                </label>
+                <button type="submit" class="btn btn-primary btn-block">Register &amp; unlock download</button>
+                <p class="form-foot">
+                  We use your registration only to share course updates; we do not sell your data.
+                </p>
+              </form>
+            </div>
+            <div id="brochure-download" class="brochure-download" hidden>
+              <p class="brochure-download-title">You are registered</p>
+              <p class="brochure-download-text">
+                Your brochure is ready. If the download does not start automatically, use the button
+                below.
+              </p>
+              <a
+                id="brochure-download-link"
+                class="btn btn-primary btn-block"
+                href="docs/Infermaxz_Python_brochure_contact_new.pdf"
+                download="Infermaxz_Python_AI_ML_Brochure.pdf"
+                >Download brochure (PDF)</a
+              >
+              <button type="button" class="btn btn-ghost btn-block" id="brochure-reset">
+                Use a different email
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="why">
+        <div class="container split">
+          <div>
+            <header class="section-head section-head-left">
+              <h2>Why teams choose Infermaxz</h2>
+              <p>
+                We combine coaching discipline with shipping experience—so lessons stick in your
+                codebase, not only in slides.
+              </p>
+            </header>
+            <ul class="checklist">
+              <li>
+                <strong>Outcome-led curricula</strong> — every module ties to a measurable artifact
+                (demo, PR, or policy doc).
+              </li>
+              <li>
+                <strong>Practitioner mentors</strong> — coaches who have run AI in real products and
+                regulated environments.
+              </li>
+              <li>
+                <strong>Flexible formats</strong> — cohorts, private classes, and hybrid schedules
+                for distributed teams.
+              </li>
+            </ul>
+          </div>
+          <div class="stat-panel" aria-label="Impact snapshot">
+            <div class="stat">
+              <span class="stat-value">40+</span>
+              <span class="stat-label">Organizations coached</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">92%</span>
+              <span class="stat-label">Would recommend to peers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">6 wk</span>
+              <span class="stat-label">Median time to first shipped AI feature</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="outcomes">
+        <div class="container">
+          <header class="section-head">
+            <h2>Placement &amp; growth—reimagined for AI roles</h2>
+            <p>
+              Like classic placement support, we help participants present their work and navigate
+              interviews—focused on AI engineering, applied research, and product AI.
+            </p>
+          </header>
+          <div class="cards cards-2">
+            <article class="card card-soft">
+              <h3>Career studio</h3>
+              <p>
+                Portfolio reviews, capstone demos, and mock interviews with hiring managers from
+                product companies.
+              </p>
+            </article>
+            <article class="card card-soft">
+              <h3>Hiring partner network</h3>
+              <p>
+                Curated intros where there is mutual fit—no spray-and-pray. We prioritize quality
+                matches over volume.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="testimonials">
+        <div class="container">
+          <header class="section-head">
+            <h2>What participants say</h2>
+            <p>Representative feedback from recent cohorts and enterprise engagements.</p>
+          </header>
+          <div class="cards cards-3">
+            <blockquote class="quote">
+              <p>
+                “We went from slide decks to a working internal copilot in six weeks. The coaching
+                rhythm made the difference.”
+              </p>
+              <footer>— VP Engineering, fintech</footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>
+                “Finally training that respects senior engineers—deep dives, not toy examples.”
+              </p>
+              <footer>— Staff engineer, SaaS</footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>
+                “Governance modules were practical. Legal and security actually signed off.”
+              </p>
+              <footer>— Head of AI, healthcare</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-wrap">
+          <div class="contact-copy">
+            <h2>Start with a discovery call</h2>
+            <p>
+              Tell us about your team, stack, and goals. We will suggest a program or a custom
+              sprint—and a clear timeline.
+            </p>
+            <p class="contact-note">
+              Prefer email? <a href="mailto:hello@infermaxz.com">hello@infermaxz.com</a>
+            </p>
+          </div>
+          <form class="contact-form" action="#" method="post" id="lead-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Work email</span>
+              <input
+                type="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="you@company.com"
+              />
+            </label>
+            <label>
+              <span>Organization</span>
+              <input type="text" name="org" autocomplete="organization" placeholder="Company or team" />
+            </label>
+            <label class="full">
+              <span>What are you trying to achieve?</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="e.g. Upskill 15 engineers on RAG, or pilot an AI support agent…"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Request a call</button>
+            <p class="form-foot">
+              By submitting, you agree to be contacted about Infermaxz programs. No spam.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a class="logo logo-footer" href="#top">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-text">Infermaxz<span class="logo-accent">Systems</span></span>
+          </a>
+          <p>AI coaching, upskilling, and development—built for teams that ship.</p>
+          <div class="footer-contact" aria-label="Contact">
+            <div class="footer-contact-item">
+              <svg
+                class="footer-contact-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <a href="tel:+919790926745">9790926745</a><span class="footer-contact-sep" aria-hidden="true">, </span><a href="tel:+918344484841">8344484841</a>
+            </div>
+            <a class="footer-contact-item footer-contact-item--link" href="mailto:infermaxz@gmail.com">
+              <svg
+                class="footer-contact-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              infermaxz@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Programs</h3>
+          <ul>
+            <li><a href="#python-course">Python for AI &amp; ML</a></li>
+            <li><a href="#ai-for-students">AI for students</a></li>
+            <li><a href="#brochure">Course brochure</a></li>
+            <li><a href="#programs">Leadership intensives</a></li>
+            <li><a href="#programs">Engineering bootcamps</a></li>
+            <li><a href="#programs">Enterprise sprints</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#why">Why Infermaxz</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Infermaxz Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
